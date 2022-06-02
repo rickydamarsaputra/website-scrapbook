@@ -6,6 +6,7 @@ function loadApp() {
 		gradients: true,
 		autoCenter: true,
 	});
+	AOS.init();
 }
 
 yepnope({
@@ -21,8 +22,4 @@ $('.flipbook').bind('turned', function (event, page, view) {
 		const audio = new Audio('/assets/audio/flip-sound.mp3');
 		audio.play();
 	}
-});
-
-$('button').on('click', function (e) {
-	console.log(e.target.innerText);
 });
