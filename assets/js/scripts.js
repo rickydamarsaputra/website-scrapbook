@@ -22,3 +22,7 @@ $('.flipbook').bind('turned', function (event, page, view) {
 		audio.play();
 	}
 });
+
+$('button').on('click', function (e) {
+	console.log(e.target.innerText);
+});
