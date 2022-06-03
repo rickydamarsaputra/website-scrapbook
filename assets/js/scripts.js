@@ -6,7 +6,6 @@ function loadApp() {
 		gradients: true,
 		autoCenter: true,
 	});
-	AOS.init();
 }
 
 yepnope({
