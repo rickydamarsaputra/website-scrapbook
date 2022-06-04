@@ -69,3 +69,11 @@ allCanvas.forEach(function (canvas) {
 	canvas.addEventListener('mouseup', endDraw);
 	canvas.addEventListener('mousemove', draw);
 });
+
+window.addEventListener('load', function () {
+	const loading = document.querySelector('.loading');
+
+	setTimeout(function () {
+		loading.style.display = 'none';
+	}, 3000);
+});
