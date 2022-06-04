@@ -23,76 +23,49 @@ $('.flipbook').bind('turned', function (event, page, view) {
 
 		view.forEach(function (val) {
 			gsap.fromTo(`img[data-page="${val}"]`, { opacity: 0, y: -100 }, { opacity: 1, y: 0, duration: 1 });
-
-			// const canvas = document.querySelector(`canvas[data-page="${val}"]`);
-			// const ctx = canvas.getContext('2d');
-			// let painting = false;
-
-			// function startDraw(e) {
-			// 	painting = true;
-			// 	draw(e);
-			// }
-
-			// function endDraw(e) {
-			// 	painting = false;
-			// 	ctx.beginPath();
-			// }
-
-			// function draw(e) {
-			// 	if (!painting) return;
-			// 	const x = e.clientX;
-			// 	const y = e.clientY;
-
-			// 	console.log({ x, y, canvas });
-
-			// 	ctx.linewidth = 20;
-			// 	ctx.lineCap = 'round';
-			// 	ctx.strokeStyle = 'white';
-
-			// 	ctx.lineTo(x, y);
-			// 	ctx.stroke();
-			// 	ctx.beginPath();
-			// 	ctx.moveTo(x, y);
-			// }
-
-			// canvas.addEventListener('mousedown', startDraw);
-			// canvas.addEventListener('mouseup', endDraw);
-			// canvas.addEventListener('mousemove', draw);
 		});
 	}
 });
 
-const canvas = document.querySelector('.drawing');
+const allCanvas = document.querySelectorAll('.drawing');
 
-const ctx = canvas.getContext('2d');
-let painting = false;
+allCanvas.forEach(function (canvas) {
+	canvas.width = 461;
+	canvas.height = 600;
 
-function startDraw(e) {
-	painting = true;
-	draw(e);
-}
+	const ctx = canvas.getContext('2d');
+	let painting = false;
 
-function endDraw(e) {
-	painting = false;
-	ctx.beginPath();
-}
+	function startDraw(e) {
+		painting = true;
+		draw(e);
+	}
 
-function draw(e) {
-	if (!painting) return;
-	const x = e.clientX;
-	const y = e.clientY;
-	console.log(x, y);
+	function endDraw(e) {
+		painting = false;
+		ctx.beginPath();
+	}
 
-	ctx.linewidth = 20;
-	ctx.lineCap = 'round';
-	ctx.strokeStyle = 'white';
+	function draw(e) {
+		if (!painting) return;
+		const rect = canvas.getBoundingClientRect();
 
-	ctx.lineTo(x, y);
-	ctx.stroke();
-	ctx.beginPath();
-	ctx.moveTo(x, y);
-}
+		const x = e.clientX - rect.left;
+		const y = e.clientY - rect.top;
 
-canvas.addEventListener('mousedown', startDraw);
-canvas.addEventListener('mouseup', endDraw);
-canvas.addEventListener('mousemove', draw);
+		console.log({ x, y });
+
+		ctx.lineWidth = 5;
+		ctx.lineCap = 'round';
+		ctx.strokeStyle = 'white';
+
+		ctx.lineTo(x, y);
+		ctx.stroke();
+		ctx.beginPath();
+		ctx.moveTo(x, y);
+	}
+
+	canvas.addEventListener('mousedown', startDraw);
+	canvas.addEventListener('mouseup', endDraw);
+	canvas.addEventListener('mousemove', draw);
+});
