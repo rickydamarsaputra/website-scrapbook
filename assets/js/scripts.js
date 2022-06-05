@@ -19,10 +19,16 @@ yepnope({
 $('.flipbook').bind('turned', function (event, page, view) {
 	if (page != 1) {
 		const audio = new Audio('/assets/audio/flip-sound.mp3');
+		const allDesc = document.querySelectorAll('.desc');
+
 		audio.play();
 
 		view.forEach(function (val) {
 			gsap.fromTo(`img[data-page="${val}"]`, { opacity: 0, y: -100 }, { opacity: 1, y: 0, duration: 1 });
+		});
+
+		allDesc.forEach(function (desc) {
+			gsap.fromTo(desc, { opacity: 0, y: -100 }, { opacity: 1, y: 0, duration: 0.5 });
 		});
 	}
 });
