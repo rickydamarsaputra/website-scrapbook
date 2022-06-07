@@ -2,7 +2,7 @@
 
 ### Task
 - design website
-- flip halaman (efek suara)
+- flip halaman (efek suara) ✅
 - bisa diketik di dokument
-- drawing
+- drawing ✅
 - bisa support animasi 3D
