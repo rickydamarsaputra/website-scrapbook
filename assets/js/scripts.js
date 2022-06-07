@@ -74,6 +74,11 @@ allCanvas.forEach(function (canvas) {
 	canvas.addEventListener('mousedown', startDraw);
 	canvas.addEventListener('mouseup', endDraw);
 	canvas.addEventListener('mousemove', draw);
+
+	canvas.addEventListener('mouseenter', function (e) {
+		canvas.style.cursor = "url('/assets/img/crayon-icon.png'), auto";
+		console.log(document);
+	});
 });
 
 window.addEventListener('load', function () {

@@ -26,6 +26,27 @@ body {
 	height: 50px;
 }
 
+.disclaimer {
+	position: absolute;
+	right: 0.5rem;
+	bottom: 0.5rem;
+}
+
+.disclaimer p {
+	position: relative;
+	margin: 0;
+	font-size: 0.8rem;
+}
+
+.disclaimer p::before {
+	content: '*';
+	font-weight: bold;
+	color: red;
+	position: absolute;
+	left: -5px;
+	top: -2px;
+}
+
 .flipbook-viewport {
 	overflow: hidden;
 	width: 100%;
@@ -50,6 +71,7 @@ body {
 	width: 461px;
 	height: 600px;
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -71,16 +93,40 @@ body {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+.flipbook-viewport .page.cover h1,
+.flipbook-viewport .page.cover h2 {
+	position: absolute;
+	color: #fff;
+}
+
+.flipbook-viewport .page.cover h1 {
+	font-size: 1.5rem;
+	top: 4rem;
+	margin: 0;
+}
+
+.flipbook-viewport .page.cover h2 {
+	font-size: 0.8rem;
+	text-transform: capitalize;
+	bottom: 1rem;
+	left: 1rem;
+	margin: 0;
+	font-weight: 500;
+}
+
 .flipbook-viewport .page .animal {
 	width: 250px;
 	height: 250px;
 	object-fit: cover;
+	position: absolute;
+	top: 10rem;
 }
 
 .flipbook-viewport .page .roller_and_sinar {
 	display: flex;
 	flex-direction: column;
-	margin-top: -10rem;
+	position: absolute;
+	top: 15rem;
 }
 
 .flipbook-viewport .page .roller_and_sinar img {
