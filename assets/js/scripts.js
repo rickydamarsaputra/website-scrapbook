@@ -55,9 +55,16 @@ allCanvas.forEach(function (canvas) {
 	function draw(e) {
 		if (!painting) return;
 		const rect = canvas.getBoundingClientRect();
+		let x, y;
 
-		const x = e.clientX - rect.left;
-		const y = e.clientY - rect.top;
+		// check if browser is mobile or not
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+			x = e.touches[0].clientX - rect.left;
+			y = e.touches[0].clientY - rect.top;
+		} else {
+			x = e.clientX - rect.left;
+			y = e.clientY - rect.top;
+		}
 
 		console.log({ x, y });
 
@@ -81,7 +88,6 @@ allCanvas.forEach(function (canvas) {
 
 	canvas.addEventListener('mouseenter', function (e) {
 		canvas.style.cursor = "url('/assets/img/crayon-icon.png'), auto";
-		console.log(document);
 	});
 });
 
