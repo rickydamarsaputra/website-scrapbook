@@ -149,6 +149,50 @@ body {
 	margin: 0;
 }
 
+.flipbook-viewport .page .quiz{
+	width: 80%;
+	position: absolute;
+	bottom: 0.5rem;
+	padding: 0.5rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	gap: 1rem;
+	background-color: #fff;
+	border-radius: 0.5rem;
+	z-index: 999;
+}
+
+.flipbook-viewport .page .quiz .question{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	/* background-color: blue; */
+}
+
+.flipbook-viewport .page .quiz .question img{
+	width: 30px;
+	height: 30px;
+	object-fit: cover;
+}
+
+.flipbook-viewport .page .quiz .question span{
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #352b2b;
+}
+
+.flipbook-viewport .page .quiz .answer{
+	width: 60%;
+	border: 2px solid #acacac;
+	border-radius: 0.2rem;
+	/* background-color: blue; */
+}
+
+.flipbook-viewport .page .quiz .answer:focus{
+	outline: none;
+}
+
 .flipbook-viewport .page .drawing {
 	position: absolute;
 	/* width: 100%;

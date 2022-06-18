@@ -1,8 +1,9 @@
 ## Website Scrapbook
 
 ### Task
-- design website
+- design website ✅
 - flip halaman (efek suara) ✅
-- bisa diketik di dokument
 - drawing ✅
-- bisa support animasi 3D
+- bisa support animasi 3D ✅
+- saat dimobile jadikan single page biar besar
+- bisa diketik di dokument (quiz emot)

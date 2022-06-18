@@ -20,6 +20,7 @@ $('.flipbook').bind('turned', function (event, page, view) {
 	if (page != 1) {
 		const audio = new Audio('/assets/audio/flip-sound.mp3');
 		const allDesc = document.querySelectorAll('.desc');
+		const allQuestion = document.querySelectorAll('.answer');
 
 		audio.play();
 
@@ -29,6 +30,20 @@ $('.flipbook').bind('turned', function (event, page, view) {
 
 		allDesc.forEach(function (desc) {
 			gsap.fromTo(desc, { opacity: 0, y: -100 }, { opacity: 1, y: 0, duration: 0.5 });
+		});
+
+		allQuestion.forEach(function (question) {
+			question.addEventListener('keyup', function (e) {
+				const inputAnswer = e.target.value.toLowerCase();
+				const answer = question.dataset.answer;
+
+				if (inputAnswer == answer) {
+					Swal.fire({
+						text: 'yes congrats your answer is correct!',
+						icon: 'success',
+					});
+				}
+			});
 		});
 	}
 });
