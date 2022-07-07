@@ -1,6 +1,7 @@
 function loadApp() {
 	$('.flipbook').turn({
-		width: 922,
+		display: 'single',
+		width: 922 / 2,
 		height: 600,
 		elevation: 50,
 		gradients: true,
