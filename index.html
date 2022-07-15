@@ -12,109 +12,267 @@
 
   <!-- loading -->
   <section class="loading">
-    <img src="/assets/img/icons/loading-icon.gif" alt="loading book icon">
+    <img src="assets/img/icons/loading-icon.gif" alt="loading book icon">
   </section>
   <!-- loading -->
+
+	<script>
+		function buka(apa)
+		{
+			if(apa==3)
+			{
+				window.open("game/hal3.html", "_blank", "toolbar=no,scrollbars=yes,resizable=no,top=50,left=50,width=1250,height=650");
+			}
+			if(apa==6)
+			{
+				window.open("game/hal67.html", "_blank", "toolbar=no,scrollbars=yes,resizable=no,top=50,left=50,width=1250,height=650");
+			}
+			
+		}
+	</script>
 
   <!-- content -->
   <div class="flipbook-viewport">
     <div class="container">
       <div class="flipbook">
         <div class="cover">
-          <h1>What types of pets are there?</h1>
-          <h2>you can drawing a book with mouse</h2>
+			
+          <img src="assets/img/cover.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+		
+		<div>
+          <img src="assets/img/pembuka hal 1.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+		<div>
+          <img src="assets/img/pembuka hal 2.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+		<div>
+          <img src="assets/img/pembuka hal 3.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+		
+		
+		
+		<!-- part 1 -->
+        <div>
+          <img src="assets/img/PART1/1_A4.jpg" alt="ikan" class="animal" data-page="2">
         </div>
         <div>
-          <img src="/assets/img/ikan.png" alt="ikan" class="animal" data-page="2">
-          <div class="roller_and_sinar">
-            <img src="/assets/img/sinar.png" alt="sinar">
-            <img src="/assets/img/roller.png" alt="roller">
-          </div>
-          <div class="desc">
-            <p>Ikan dapat hidup diair tawar seperti sungai, air asin dilaut luas hingga hidup diair payau</p>
-          </div>
-          <div class="quiz">
-            <div class="question">
-              <img src="/assets/img/icons/fin-icon.png" alt="">
-              <span>+</span>
-              <img src="/assets/img/icons/water-icon.png" alt="">
-              <span>=</span>
-            </div>
-            <input type="text" class="answer" data-answer="ikan">
-          </div>
-          <canvas class="drawing"></canvas>
+          <img src="assets/img/PART1/2_A4.jpg" alt="kelinci" class="animal" data-page="3">
         </div>
         <div>
-          <img src="/assets/img/kelinci.png" alt="kelinci" class="animal" data-page="3">
-          <div class="roller_and_sinar">
-            <img src="/assets/img/sinar.png" alt="sinar">
-            <img src="/assets/img/roller.png" alt="roller">
-          </div>
-          <div class="desc">
-            <p>Kelinci dibagi menjadi kelinci peliharaan dan pedaging yang mana kelinci pedaging biasanya memiliki tubuh
-              yang lebih besar dari kelinci peliharaan
-            </p>
-          </div>
-          <div class="quiz">
-            <div class="question">
-              <img src="/assets/img/icons/fin-icon.png" alt="">
-              <span>+</span>
-              <img src="/assets/img/icons/water-icon.png" alt="">
-              <span>=</span>
-            </div>
-            <input type="text" class="answer" data-answer="kelinci">
-          </div>
-          <canvas class="drawing"></canvas>
+          <img src="assets/img/PART1/3_A4.jpg" alt="ayam" class="animal" data-page="4">
         </div>
         <div>
-          <img src="/assets/img/ayam.png" alt="ayam" class="animal" data-page="4">
-          <div class="roller_and_sinar">
-            <img src="/assets/img/sinar.png" alt="sinar">
-            <img src="/assets/img/roller.png" alt="roller">
-          </div>
-          <div class="desc">
-            <p>Tidak cuma dibudidayakan saja, ayam juga dijadikan olahan kuliner yang lezat yang sering dikonsumsi
-              bahkan saat perayaan besar nasional
-            </p>
-          </div>
-          <canvas class="drawing"></canvas>
+          <img src="assets/img/PART1/4_A4.jpg" alt="anjing" class="animal" data-page="5">
         </div>
         <div>
-          <img src="/assets/img/anjing.png" alt="anjing" class="animal" data-page="5">
-          <div class="roller_and_sinar">
-            <img src="/assets/img/sinar.png" alt="sinar">
-            <img src="/assets/img/roller.png" alt="roller">
-          </div>
-          <div class="desc">
-            <p>Ada banyak sekali jenis anjing yang dapat dipelihara mulai dari ras kecil hingga besar
-            </p>
-          </div>
-          <canvas class="drawing"></canvas>
+          <img src="assets/img/PART1/5_A4.jpg" alt="kucing" class="animal" data-page="6">
         </div>
         <div>
-          <img src="/assets/img/kucing.png" alt="kucing" class="animal" data-page="6">
-          <div class="roller_and_sinar">
-            <img src="/assets/img/sinar.png" alt="sinar">
-            <img src="/assets/img/roller.png" alt="roller">
-          </div>
-          <div class="desc">
-            <p>Seiring berjalannya waktu, kucing tak hanya dari ras murni namun jenis kucing kian banyak karena
-              pengembangbiakan dari kucing persilangan
-            </p>
-          </div>
-          <canvas class="drawing"></canvas>
+		
+			<img style="margin-top:70px;z-index:100;width: 250px;height: 80px;-ms-transform: rotate(-10deg); /* IE 9 */
+						transform: rotate(-10deg);" src="assets/img/icons/tombol_buka.png" onclick="buka(6)">
+          <img src="assets/img/PART1/hal_6_A4_baru.jpg" alt="kura" class="animal" data-page="7">
+		  
         </div>
         <div>
-          <img src="/assets/img/kura.png" alt="kura" class="animal" data-page="7">
-          <div class="roller_and_sinar">
-            <img src="/assets/img/sinar.png" alt="sinar">
-            <img src="/assets/img/roller.png" alt="roller">
-          </div>
-          <div class="desc">
-            <p>Kura-kura dibagi menjadi kura-kura air tawar dan darat
-            </p>
-          </div>
-          <canvas class="drawing"></canvas>
+		<img style="margin-top:70px;z-index:100;width: 250px;height: 80px;-ms-transform: rotate(-10deg); /* IE 9 */
+						transform: rotate(-10deg);" src="assets/img/icons/tombol_buka.png" onclick="buka(6)">
+          <img src="assets/img/PART1/hal_7_A4_baru.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART1/8_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART1/9_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART1/10_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART1/11_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART1/12_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART1/13_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART1/14_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART1/15_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART2/Cover2A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART2/1_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART2/2_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+		<img style="margin-top:370px;margin-left:-280px;z-index:100;width: 140px;height: 45px;-ms-transform: rotate(-10deg); /* IE 9 */
+						transform: rotate(-10deg);" src="assets/img/icons/tombol_buka3.png" onclick="buka(3)">
+          <img src="assets/img/PART2/hal_3_A4_baru.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART2/4_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART2/5_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART2/6_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART2/7_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART2/8_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART2/9_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART2/10_A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART3/Cover3A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART3/1A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART3/2A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART3/3A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART3/4A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART3/5A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART3/6A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART3/7A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART3/8A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART3/9A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+        <div>
+          <img src="assets/img/PART4/judul4A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART4/1A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART4/2A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART4/3A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART4/4A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART4/5A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART4/6A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART4/7A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART4/8A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART4/9A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART4/10A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART4/11A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART4/12A4.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+		
+		<!-- part 5 -->
+		<div>
+          <img src="assets/img/PART5/1 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART5/2 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART5/3 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART5/4 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART5/5 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART5/6 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART5/7 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART5/8 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART5/9 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART5/10 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART5/11 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART5/12 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+         <div>
+          <img src="assets/img/PART5/13 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+		<div>
+          <img src="assets/img/PART5/14 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+		<div>
+          <img src="assets/img/PART5/15 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+		<div>
+          <img src="assets/img/PART5/16 BARU.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+		
+		<!-- penutup-->
+		
+		<div>
+          <img src="assets/img/penutup hal 1.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+		<div>
+          <img src="assets/img/penutup hal 2.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+		<div>
+          <img src="assets/img/penutup hal 3.jpg" alt="kura" class="animal" data-page="7">
+        </div>
+		
+		<div>
+          <img src="assets/img/cover belakang.jpg" alt="kura" class="animal" data-page="7">
         </div>
       </div>
     </div>
@@ -128,11 +286,11 @@
   <!-- disclaimer -->
 
   <!-- scripts -->
-  <script src="/assets/js/jquery.min.1.7.js"></script>
-  <script src="/assets/js/modernizr.2.5.3.min.js"></script>
+  <script src="assets/js/jquery.min.1.7.js"></script>
+  <script src="assets/js/modernizr.2.5.3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.17/dist/sweetalert2.all.min.js"></script>
-  <script src="/assets/js/scripts.js"></script>
+  <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>

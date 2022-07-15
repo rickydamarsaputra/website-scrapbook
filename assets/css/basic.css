@@ -77,12 +77,11 @@ body {
 	align-items: center;
 	background-color: white;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-image: url(../img/background.jpg);
+	background-size: 100% 100%;	
 }
 
 .flipbook-viewport .page.cover {
-	background-image: url(../img/cover.gif);
+	background-image: url(../img/PART1/judul1A4.jpg);
 }
 
 .flipbook .page {
@@ -115,11 +114,10 @@ body {
 }
 
 .flipbook-viewport .page .animal {
-	width: 250px;
-	height: 250px;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	position: absolute;
-	top: 10rem;
 }
 
 .flipbook-viewport .page .roller_and_sinar {

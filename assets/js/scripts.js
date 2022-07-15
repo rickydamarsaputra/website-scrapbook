@@ -1,8 +1,7 @@
 function loadApp() {
 	$('.flipbook').turn({
-		display: 'single',
-		width: 922 / 2,
-		height: 600,
+		width: 922,
+		height: 640,
 		elevation: 50,
 		gradients: true,
 		autoCenter: true,
@@ -11,9 +10,9 @@ function loadApp() {
 
 yepnope({
 	test: Modernizr.csstransforms,
-	yep: ['/assets/js/turn.js'],
-	nope: ['/assets/js/turn.html4.min.js'],
-	both: ['/assets/css/basic.css'],
+	yep: ['assets/js/turn.js'],
+	nope: ['assets/js/turn.html4.min.js'],
+	both: ['assets/css/basic.css'],
 	complete: loadApp,
 });
 
